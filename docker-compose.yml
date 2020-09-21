@@ -1,0 +1,15 @@
+version: '2'
+services:
+  FCE:
+    build: .
+    ports:
+     - "27012 :27012 /udp"
+     - "27015:27015/udp"
+    volumes:
+     - /opt/FCE:/FCE
+#    environment:
+#      - PUID=1000
+#      - PGID=1000
+#      - UPDATE_MODS_ON_START=true
+#      - USERNAME=FactorioUsername
+#      - TOKEN=FactorioToken
