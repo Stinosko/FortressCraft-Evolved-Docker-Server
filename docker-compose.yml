@@ -4,7 +4,7 @@ services:
     build: .
     ports:
      - "27012:27012/udp" # game port
-     - "27015:27015" # rcon
+     - "27015:27015" # rcon (delete if you don't want to use rcon)
     volumes:
      # This the directory containing the world, config (.ini), mods and logs. 
      - ~/games/FCE:/FCE

@@ -23,9 +23,6 @@ ENV PORT=27012  \
     GROUP=FCE \
     HOME=/home/FCE
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends libsdl2-2.0-0:i386
-
 RUN addgroup --gid "$PGID" --system "$GROUP" \
     && adduser --uid "$PUID" --shell "/bin/sh" --system --ingroup $GROUP "$USER" \
     && mkdir -p mkdir -p /opt/FCE \
